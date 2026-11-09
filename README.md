@@ -20,8 +20,9 @@ Create a character → persist it with SQLAlchemy/SQLite → fight enemies → g
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
-uvicorn cisc217_final_project.main:app --reload
+uvicorn cisc217_final_project.main:app --reload --host 0.0.0.0 --port 8000
 ```
+Open https://sdccd-jupyterhub.nrp-nautilus.io/user/YOUR_USERNAME/proxy/8000/ in your web browser (replace YOUR_USERNAME with yours).
 
 ## Verify the instructor example
 
