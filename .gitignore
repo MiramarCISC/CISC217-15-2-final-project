@@ -1,0 +1,38 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# pytest/cache/coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Packaging/build artifacts
+*.egg-info/
+build/
+dist/
+
+# Runtime databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated exports
+exports/
+src/cisc217_final_game/exports/
+
+# IDE/OS files
+.DS_Store
+.vscode/
+.idea/
+
+# Temporary verification directories
+.verify/
+.verify-venv/
