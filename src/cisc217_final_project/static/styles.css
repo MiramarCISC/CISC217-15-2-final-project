@@ -1,1 +1,43 @@
-body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4;color:#222}.container{max-width:900px;margin:0 auto;padding:1rem}.panel{background:white;border:1px solid #ccc;border-radius:6px;padding:1rem;margin-bottom:1rem}label{display:block;font-weight:bold;margin-top:.75rem}input,select{width:100%;padding:.5rem;box-sizing:border-box}button{margin:.25rem;padding:.5rem 1rem;cursor:pointer}.character-card{margin-bottom:.75rem}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 0.75rem;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+button {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.character-card {
+    margin-bottom: 0.75rem;
+}

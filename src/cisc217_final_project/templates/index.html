@@ -1,8 +1,96 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>{{ title }}</title><link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}"></head>
-<body><main class="container"><h1>{{ title }}</h1>
-<section class="panel"><h2>Create Character</h2><form id="character-form"><label for="name">Name</label><input id="name" required><label for="class-id">Class</label><select id="class-id" required></select><label for="health">Health</label><input id="health" type="number" value="100"><label for="power">Power</label><input id="power" type="number" value="10"><button type="submit">Create</button></form><p id="status"></p></section>
-<section class="panel"><h2>Party</h2><button id="refresh" type="button">Refresh</button><ul id="character-list"></ul></section>
-<section class="panel"><h2>Summary</h2><pre id="summary"></pre></section>
-<section class="panel"><h2>Battle History</h2><ul id="history"></ul></section>
-<section class="panel"><h2>Exports</h2><a href="/export/json">JSON</a> | <a href="/export/csv">CSV</a></section>
-</main><script src="{{ url_for('static', path='/app.js') }}"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ title }}</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ request.scope.get('root_path', '') }}/static/styles.css"
+    >
+</head>
+<body>
+    <main class="container">
+        <h1>{{ title }}</h1>
+
+        <section class="panel">
+            <h2>Create Character</h2>
+
+            <form id="character-form">
+                <label for="name">Name</label>
+                <input id="name" required>
+
+                <label for="class-id">Class</label>
+                <select id="class-id" required></select>
+
+                <label for="health">Health</label>
+                <input
+                    id="health"
+                    type="number"
+                    value="100"
+                >
+
+                <label for="power">Power</label>
+                <input
+                    id="power"
+                    type="number"
+                    value="10"
+                >
+
+                <button type="submit">
+                    Create
+                </button>
+            </form>
+
+            <p id="status"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Party</h2>
+
+            <button
+                id="refresh"
+                type="button"
+            >
+                Refresh
+            </button>
+
+            <ul id="character-list"></ul>
+        </section>
+
+        <section class="panel">
+            <h2>Summary</h2>
+            <pre id="summary"></pre>
+        </section>
+
+        <section class="panel">
+            <h2>Battle History</h2>
+            <ul id="history"></ul>
+        </section>
+
+        <section class="panel">
+            <h2>Exports</h2>
+
+            <a href="{{ request.scope.get('root_path', '') }}/export/json">
+                JSON
+            </a>
+
+            |
+
+            <a href="{{ request.scope.get('root_path', '') }}/export/csv">
+                CSV
+            </a>
+        </section>
+    </main>
+
+    <script>
+        window.APP_ROOT = "{{ request.scope.get('root_path', '') }}";
+    </script>
+
+    <script
+        src="{{ request.scope.get('root_path', '') }}/static/app.js"
+    ></script>
+</body>
+</html>
