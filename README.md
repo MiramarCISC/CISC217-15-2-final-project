@@ -20,7 +20,7 @@ Create a character → persist it with SQLAlchemy/SQLite → fight enemies → g
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
-uvicorn cisc217_final_game.main:app --reload
+uvicorn cisc217_final_project.main:app --reload
 ```
 
 ## Verify the instructor example

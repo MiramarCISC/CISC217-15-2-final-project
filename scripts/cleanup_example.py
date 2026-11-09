@@ -2,9 +2,9 @@ from pathlib import Path
 import shutil
 ROOT=Path(__file__).resolve().parents[1]
 SC=ROOT/"scaffold"
-PKG=ROOT/"src"/"cisc217_final_game"
+PKG=ROOT/"src"/"cisc217_final_project"
 if PKG.exists(): shutil.rmtree(PKG)
-shutil.copytree(SC/"src"/"cisc217_final_game",PKG)
+shutil.copytree(SC/"src"/"cisc217_final_project",PKG)
 TESTS=ROOT/"tests"
 for p in TESTS.glob("test_*.py"): p.unlink()
 shutil.copy2(SC/"tests"/"conftest.py",TESTS/"conftest.py")

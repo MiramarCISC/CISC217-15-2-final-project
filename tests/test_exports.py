@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
-from cisc217_final_game.service import GameService
-from cisc217_final_game.schemas import CharacterCreate
+from cisc217_final_project.service import GameService
+from cisc217_final_project.schemas import CharacterCreate
 
 def test_exports(env,tmp_path):
     factory=env

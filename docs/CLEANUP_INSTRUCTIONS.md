@@ -10,7 +10,7 @@ You may inspect and run it, but do not submit it as your final project.
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
-uvicorn cisc217_final_game.main:app --reload
+uvicorn cisc217_final_project.main:app --reload
 ```
 
 ## Test the working example

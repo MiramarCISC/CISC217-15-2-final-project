@@ -1,5 +1,5 @@
-from cisc217_final_game.domain import Party,CombatRules
-from cisc217_final_game.models import Character
+from cisc217_final_project.domain import Party,CombatRules
+from cisc217_final_project.models import Character
 
 def test_domain_protocols():
     chars=[Character(id=1,name="Aria",class_id=1,level=2,health=100,power=20,experience=60),Character(id=2,name="Borin",class_id=1,level=1,health=100,power=15,experience=20)]

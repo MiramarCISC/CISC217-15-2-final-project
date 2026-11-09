@@ -4,10 +4,10 @@ import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session,sessionmaker
-import cisc217_final_game.database as database
-from cisc217_final_game.database import get_session
-from cisc217_final_game.main import app
-from cisc217_final_game.models import Base
+import cisc217_final_project.database as database
+from cisc217_final_project.database import get_session
+from cisc217_final_project.main import app
+from cisc217_final_project.models import Base
 
 @pytest.fixture
 def env(monkeypatch):
